@@ -1,0 +1,26 @@
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+main()
+{
+    int DATA[100],N=3,ITEM=2,LOC=1,a;
+    for(int i=0; i<N ; i++)
+    {
+       cin>>DATA[i];
+    }
+    DATA[N+1]=ITEM;//item is loc 6 or item anywhere loc of 6.
+
+    LOC=1;
+    while( DATA [LOC] != ITEM )
+    {
+        LOC=LOC+1;
+
+    }
+    cout<<"item found"<<DATA[ITEM];
+   // if(LOC=N+1)
+    //{
+       //LOC=0;
+       //cout<<"item not found"<<DATA[ITEM];
+    //}
+
+}

@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    int grade[5],i;
+    for(i=0;i<5;i++)
+    {
+        printf("Grade:%d\n",i);
+        scanf("%d",&grade[i]);
+    }
+    return 0;
+}

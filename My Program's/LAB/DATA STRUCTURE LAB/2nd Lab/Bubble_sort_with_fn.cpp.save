@@ -1,0 +1,39 @@
+#include<iostream>
+#include <stdio.h>
+using namespace std;
+
+void bubble(int data[],int n)
+{
+    int i,temp;
+    for(int c=1; c<=n-1;c++)
+    {
+            for(i=1;i<=n-c;i++)
+                {
+                  if(data[i]>data[i+1])
+                    {
+                        temp=data[i];
+                        data[i]=data[i+1];
+                        data[i+1]=temp;
+                    }
+                }
+    }
+
+}
+
+int main()
+{
+    int data[100],i,n;
+    printf("Enter the number of elements you want to sort: ");
+    scanf("%d",n);
+    printf("Enter element:");
+    for(i=1;i<n;i++)
+    {
+        scanf("%d",&data[i]);
+    }
+    bubble(data,n);
+    printf("After Sorted: ");
+    for(i=1;i<n;i++)
+         cout<<(data[i])<<" ";
+    return 0;
+}
+

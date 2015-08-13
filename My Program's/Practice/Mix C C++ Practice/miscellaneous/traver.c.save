@@ -1,0 +1,17 @@
+#include<stdio.h>
+main()
+{
+    int k,lb=0,ub=5,la[4];
+    k=lb;
+
+    while(k<=ub)
+    {
+        scanf("%d",&la[k]);
+       printf("elements are:%d \n",la[k]);
+ 
+        k=k+1;
+    }
+
+   if(la[k]>5)
+   printf("elements are:%d \n",la[k]);
+}

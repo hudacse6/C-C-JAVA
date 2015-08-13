@@ -1,0 +1,7 @@
+#include<iostream>
+using namespace std;
+main()
+{
+    char ch[6]="niton";
+    cout<<ch;
+}

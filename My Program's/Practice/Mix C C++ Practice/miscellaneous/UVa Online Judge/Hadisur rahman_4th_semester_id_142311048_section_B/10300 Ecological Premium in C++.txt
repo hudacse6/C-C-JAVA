@@ -1,0 +1,40 @@
+10300 	Ecological Premium
+
+
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+main()
+{
+    long long int test_case, n, a, b, c,sum,i,j;
+    while(scanf("%d",&test_case)==1)
+    {
+        for(i=1; i<= test_case; i++)
+        {
+            cin>>n;
+            sum=0;
+            for(j=1;j<=n;j++)
+            {
+                cin>>a>>b>>c;
+                sum+=(a*c);
+            }
+            cout<<sum<<"\n";
+        }
+    }
+
+
+}
+
+
+
+using this algorithm for the program :
+
+1. input for 1st test_case
+2. loop 1 to test_case //to do 
+    get input for n
+        loop 1 to n
+            get input for a , b, c
+                sum+=(a*c);
+    print the sum;
+3. exit();
+

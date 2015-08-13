@@ -1,0 +1,6 @@
+01.  Write a program to summation two array and add another one .
+02.  Write a program to check the maximam or minimam value into a array element .
+03.  Write a program that take input as A B C D and show as output A,B,C,D.
+
+
+

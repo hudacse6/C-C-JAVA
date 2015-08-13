@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main()
+{
+   int data[100], item, loc,c, n;
+
+   printf("Enter the number of elements in array\n");
+   scanf("%d",&n);
+
+   printf("Enter %d integer(s)\n", n);
+
+   for (c =1; c <=n; c++)
+      scanf("%d", &data[c]);
+
+   printf("Enter the number to search\n");
+   scanf("%d", &item);
+
+   for (c = 0; c < n; c++)
+  {
+         if(data[c]==item){
+             loc=c;
+
+         }
+         c=c+1;
+
+    }
+   if (loc == 0)
+      printf("%d Element not found in array.\n", item);
+      else
+    printf("%d is present at location %d.\n", item,c);
+
+   //return 0;
+}
+/*
+if (data[c] == item) {
+       // loc=mid;
+         printf("%d found at location %d.\n", item,c);
+
+}
+else
+   // loc=0;
+     printf("Not found! %d is not present in the list.\n", item);
+}
+*/
+

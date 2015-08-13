@@ -1,0 +1,148 @@
+01.
+#include<iostream>
+using namespace std;
+void travers(int b[])
+{
+int i;
+for(i=0;i<5;i++){
+cout<<"number"<<b[i]­<<"\nposition"<<i<<e­ndl;
+
+}
+}
+
+int main()
+{
+int a[100000],i;
+for(i=0;i<5;i++)
+{
+cin>>a[i];
+}
+travers(a);
+return 0;
+}
+
+02.
+#include<iostream>
+using namespace std;
+int main ()
+{
+int array [100 ], p , c , n ,v ;
+cout<<"Enter number of elements in array \n ";
+cin>>n;
+cout<<"Enter"<<n<< "elements \n " ;
+for ( c = 0; c < n ; c ++){
+cin>>array [c];
+}
+cout<< "Enter the location where you wish to insert an element \n " ; cin>>p ;
+cout<<"Enter the value to insert \n ;
+cin>> v ;
+for ( c = n - 1; c >= p - 1; c -- ){
+array [c+ 1] = array [c] ;
+array [ position -1] = value ;}
+cout<<"Resultant array is \n " ;
+for ( c = 0; c <= n ; c ++){
+cout<< array [ c]) }
+return 0;
+
+}
+
+03.
+#include<iostream>
+using namespace std;
+void scarch(int b[])
+{
+int k,i;
+cout<<"enter number:"<<endl;
+cin>>k;
+for(i=0;i<5;i++){
+if(k==b[i])
+{
+cout<<"number"<<b[i]­<<" at"<<i+1<<" postion"<<endl;
+break;
+}
+
+}
+if(i==5)
+
+cout<<"not found";
+
+}
+int main()
+{
+
+int a[50000],i;
+for(i=0;i<5;i++)
+{
+cin>>a[i];
+
+}
+scarch(a);
+
+return 0;
+}
+
+04.
+#include<iostream>
+using namespace std;
+void travers(int b[])
+{
+int i,item,k,d;
+cout<<"enter number:"<<endl;
+cin>>k;
+for(i=0;i<5;i++)
+{
+if(k==b[i])
+{
+item=b[i];
+
+for(i;i<5;i++)
+{
+b[i]=b[i+1];
+
+}}}
+for(i=0;i<4;i++)
+{
+cout<<"number"<<b[i]­<<endl;
+}}
+
+int main()
+{
+int a[100000],i;
+for(i=0;i<5;i++)
+{
+cin>>a[i];
+}
+travers(a);
+return 0;
+}
+
+05.
+#include<iostream>
+using namespace std;
+int main()
+{
+int i,j,c,t,a[1000],n;
+cout<<"number of elsement:"<<endl;
+cin>>n;
+cout<<"enter:"<<endl­;
+for(c=0;c<n;c++)
+{
+
+cin>>a[c];
+}
+for(c=0;c<n-1;c++){
+for(i=0;i<n-c-1;i++)­{
+if(a[i]>a[i+1]){
+t=a[i];
+a[i]=a[i+1];
+a[i+1]=t;
+}
+}}
+cout<<"sorted:"<<end­l;
+for(c=0;c<n;c++)
+{
+cout<<a[c]<<endl;
+}
+
+
+}

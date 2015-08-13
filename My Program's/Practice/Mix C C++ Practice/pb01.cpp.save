@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+main()
+{
+    int fib,sum=0,f=0,s=1,n, x,y,total,z,total = 0;
+    x = y = 1;
+    cout<<"Fib number:";
+    cin>>n;
+    for(int i=0;i<=n;i++)
+    {
+        if(i<=1)
+            fib=i;
+        else
+        {
+            fib=f+s;
+            f=s;
+            s=fib;
+            if(fib>4000000)
+            {
+                break;
+            }
+
+
+
+        }
+        
+   do
+    { if (x%2 == 0)
+        total += x;
+        z=x;
+        x+=y;
+        y=z;
+    }
+    while (x > 1000000);
+
+
+    }
+}
+

@@ -1,0 +1,75 @@
+#include<iostream>
+using namespace std;
+void revers(char b[])
+{
+int i,n=25;
+cout<<"revers order:"<<endl;
+for(i=n;i>=0;i--)
+{
+
+cout<<b[i]<<" ";
+}
+}
+int main()
+{
+    char b[26]={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+  revers(b);
+  return 0;
+}
+#include<iostream>
+using namespace std;
+int sort(int n[])
+{
+    int i,j,t;
+ for(i=0;i<15;i++)
+for(j=0;j<15-1;j++)
+if(n[j]>n[j+1])
+{
+t=n[j];
+             n[j]=n[j+1];
+             n[j+1]=t;
+}
+cout<<"largest two value:"<<endl;
+for(i=13;i<15;i++)
+{
+
+cout<<n[i]<<" ";
+}
+}
+int main()
+{
+    int b[15]={22,6,1,0,-34,7,-9,45,67,12,34,65,8,9,66};
+    sort(b);
+    return 0;
+
+}
+
+
+
+#include<iostream>
+using namespace std;
+int sort(int n[])
+{
+    int i,j,t;
+ for(i=9;i<15;i++)
+for(j=9;j<15-1;j++)
+if(n[j]>n[j+1])
+{
+t=n[j];
+             n[j]=n[j+1];
+             n[j+1]=t;
+}
+for(i=0;i<15;i++)
+{
+
+cout<<n[i]<<" "<<endl;;
+}
+
+}
+int main()
+{
+    int b[15]={22,6,1,0,-34,7,-9,45,67,12,34,65,8,9,66};
+    sort(b);
+    return 0;
+
+}

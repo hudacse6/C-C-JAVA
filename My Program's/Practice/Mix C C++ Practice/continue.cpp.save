@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+main()
+{
+    int i;
+    cout<<"Even number :";
+    for(i=1;i<=50;i++)
+    {
+        if(i%2)//odd
+            continue;
+        cout<<i<<" ";
+    }
+    cout<<"odd number"<<"\n";
+    i=0;
+    while(i<50)
+    {
+        i++;
+        if(!(i%2))//even
+            continue;
+        cout<<i;
+    }
+}

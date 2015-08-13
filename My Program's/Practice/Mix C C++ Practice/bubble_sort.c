@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int a[50],i;
+    int k,j,temp,n;
+    printf("enter the the total array number:");
+    for(i=0;i<5;i++)
+    {
+
+         scanf("%d",&a[i]);
+    }
+    for(k=1;k<n-1;k++)
+    {
+        for(j=0;j<=n-k-1;j++)
+
+            {
+            if( a[j] > a[j+1] )
+                 {
+                    temp=a[j]  ;
+                    a[j]=a[j+1] ;
+                    a[j+1]=temp;
+                 }
+
+            }
+
+    }
+    for(i=0;i<5;i++)
+         printf("%d\n",a[i]);
+    return 0;
+}

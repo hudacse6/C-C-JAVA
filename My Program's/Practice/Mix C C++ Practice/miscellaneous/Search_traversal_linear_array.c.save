@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int grade[5]={20,465,56,4,987},i;
+
+    for(i=0;i<5;i++)
+    {
+        printf("\n grade: %d",grade[i]);
+    }
+
+    return 0;
+}

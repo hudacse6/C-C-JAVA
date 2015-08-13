@@ -1,0 +1,12 @@
+#include<stdio.h>
+main()
+{
+    f
+    while(1)
+    {
+        scanf("%f",&n);
+        if(n<=0.0)
+            break;
+        printf("%f\n",sqrt());
+    }
+}

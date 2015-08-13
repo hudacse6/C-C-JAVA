@@ -1,0 +1,16 @@
+#include<stdio.h>
+main()
+{
+    int x,y,total,z;
+    
+    total = 0;
+    x = y = 1;
+   do
+    { if (x%2 == 0)
+        total += x;
+        z=x;
+        x+=y;
+        y=z;
+    }
+    while (x > 1000000);
+}

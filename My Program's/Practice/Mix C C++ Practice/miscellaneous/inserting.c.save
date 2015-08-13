@@ -1,0 +1,23 @@
+#include<stdio.h>
+main()
+{
+    int item=0 ,k=1,n=5,j,la[100],i=0;//k=indicate's the position //n= indicates the elements//
+     j=n;
+    printf("enter array element:\n");
+    for(i=0;i<n;i++)
+        {
+            scanf("%d",&la[i]);
+        }
+     while(j>=k)
+        {
+            la[j+1]=la[j];
+            j=j-1;
+        }
+    printf("=");
+        la[k]=item;
+        n=n+1;
+    for(j=0;j<n;j++)
+        printf("%d ",la[j]);
+
+
+}

@@ -1,0 +1,28 @@
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+main()
+{
+    int LA[100],N=5,J,K=2,ITEM=0,i=0;//K=POSITION
+    J=N;
+
+
+    for(int i=0;i<3;i++)
+    {
+        cin>>LA[i];
+    }
+    while(J>=K)
+    {
+        LA[J+1]=LA[J];
+        J=J-1;
+    }
+    cout<<"INSERT ITEM:";
+    LA[K]=ITEM;
+    J=J+1;
+    for(int j=0;j<3;j++)
+    {
+        cout<<"\n"<<LA[j];
+    }
+
+
+}

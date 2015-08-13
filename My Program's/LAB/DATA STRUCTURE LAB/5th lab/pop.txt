@@ -1,0 +1,36 @@
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+void pop(int stack[],int top , int item)
+{
+    printf("Before deleted:\n");
+    for(int i=0;i<=top;i++)
+    {
+       printf("%d ",stack[i]);
+    }
+      if(top==0)
+    {
+        cout<<"underflow";
+
+    }
+    else
+    {
+        item=stack[3];
+        top=top-1;
+    }
+    cout<<"\nafter deleted:\n";
+    for(int i=0;i<=top;i++)
+    {
+       printf("%d ",stack[i]);
+    }
+}
+
+main()
+{
+
+   int stack[7]={11,2,8,10};
+   int maxstack=7,top=3,item=10;
+    pop(stack,top,item);
+}
+
+

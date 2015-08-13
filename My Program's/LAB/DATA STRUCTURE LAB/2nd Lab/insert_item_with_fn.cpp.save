@@ -1,0 +1,35 @@
+#include<iostream>
+#include <stdio.h>
+using namespace std;
+int insert(int array[],int val);
+int main (void)
+{
+  int arr[5],j;
+  for (j = 0; j<5; j++)
+  {
+    scanf("%d",&arr[j]);
+  }
+
+  insert(arr,2);
+  for(j = 0;j<6;j++)
+    printf("%d",arr[j]);
+return(0);
+}
+int insert(int array[],int val)
+{
+  int k,i;
+  for (k = 0;k<5;k++)
+    if(val<array[k])
+
+    break;
+
+  for (i = 4; i>=k;i--)
+  {
+    array[i+1] = array[i];
+
+  }
+  array[k] = val;
+
+  return(1);
+
+}

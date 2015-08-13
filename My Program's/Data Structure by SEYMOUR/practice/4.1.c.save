@@ -1,0 +1,12 @@
+#include<stdio.h>
+main()
+{
+    int la[100],ub=3,lb=0;
+    int k=lb;//initialize counter
+    while(k<=ub)//here step 8,9 ,10 repeated
+    {
+        scanf("%d",&la[k]);
+        printf("traversaling value:%d\n",la[k]);//visit element
+        k=k+1;//increase counter
+    }
+}

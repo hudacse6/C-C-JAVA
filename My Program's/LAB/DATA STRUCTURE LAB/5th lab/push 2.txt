@@ -1,0 +1,51 @@
+#include<iostream>
+#include<stdio.h>
+using namespace std;
+void push(int stack[],int *top ,int maxstack, int item)
+{
+    //int stack[7]={1,2,9,8};
+    //int maxstack=7,top=3,item=5;
+   // printf("Before inserted:\n");
+   // for(int i=0;i<=top;i++)
+   // {
+   //    printf("%d ",stack[i]);
+   // }
+
+    if(*top==maxstack)
+    {
+        cout<<"overflow";
+    }
+    else
+    {
+        *top=*top+1;
+        stack[*top]=item;
+    }
+//printf("\nafter inserted:\n");
+    //for(int i=0;i<=top;i++)
+   // {
+      // printf("%d ",stack[i]);
+    //}
+}
+
+main()
+{
+
+   int stack[7]={1,2,9,8};
+   int maxstack=7,top=3,item=5;
+
+   printf("Before inserted:\n");
+
+    for(int i=0;i<=top;i++)
+    {
+       printf("%d ",stack[i]);
+    }
+
+push(stack,&top ,maxstack,item);
+
+    printf("\nafter inserted:\n");
+
+    for(int i=0;i<=top;i++)
+    {
+       printf("%d ",stack[i]);
+    }
+}
